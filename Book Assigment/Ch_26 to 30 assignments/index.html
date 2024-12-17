@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 26 to 30 Assignments</title>
+    <style>
+        .dice {
+            font-size: 48px;
+            font-weight: bold;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            width: 100px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #333;
+        }
+        .coin{
+            margin-top: 50px;
+            padding: 10px;
+        }
+        .Number{
+            margin-top: 50px;
+            padding: 10px;
+        }
+.btn{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+    </style>
+</head>
+<body>
+    <button onclick="rollDice()">Roll Dice</button>
+
+    <div class="dice" id="diceResult">1</div>
+
+  <div class="btn">
+    <button onclick="coinvalue()" class="coin">Generate Coin Value</button>
+
+    <button onclick="randomNumber()" class="Number">Generate Random Number</button>
+  </div>
+
+  <h1>Enter your weight</h1>
+    <input type="text" id="weightInput" placeholder="Enter your weight">
+    <button onclick="parseWeight()">Submit</button>
+    <p id="result"></p>
+
+    <h1>Guess the Secret Number</h1>
+    <p>Guess a number between 1 and 10:</p>
+    <input type="number" id="userInput" min="1" max="10">
+    <button onclick="checkGuess()">Submit Guess</button>
+    <p id="result1"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
