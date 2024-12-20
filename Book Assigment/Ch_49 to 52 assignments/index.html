@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 49 to 52 assignments</title>
+</head>
+<body>
+    <h1>Signup Form</h1>
+    <form onsubmit="displayFormData(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+    
+
+    <h1>Product Details</h1>
+    <p>This is a brief description of the item.</p>
+    <button onclick="toggleDetails(this)">Read More</button>
+    <div id="details" style="display: none;">
+        <p>This is the full detail of the item. It includes specifications, features, and other information.</p>
+    </div>
+
+   
+
+
+    <script src="app.js"></script>
+</body>
+</html>
